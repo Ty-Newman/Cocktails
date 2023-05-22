@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Nav/Nav';
 import "./components/Nav/Nav.css";
+import { Route, Routes } from 'react-router-dom';
+import Featured from './components/Featured/Featured';
 
 function App() {
   const [currentTime, setCurrentTime] = useState(0);
@@ -16,6 +18,9 @@ function App() {
 
   return (
     <div className="App">
+      <Routes>
+        <Route path='/' element={<Featured />} />
+      </Routes>
       <Navbar />
       <header className="App-header">
         <a

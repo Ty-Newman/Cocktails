@@ -15,7 +15,7 @@ const Navbar = () => {
                 )}
             </button>
             <ul className={`nav-links ${navOpen ? "open" : ""}`}>
-                <li><a href="/home">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="/features">Favorites</a></li>
                 <li><a href="/pricing">Cocktail Creator</a></li>
                 <li><a href="/contact">Add Ingredients</a></li>
