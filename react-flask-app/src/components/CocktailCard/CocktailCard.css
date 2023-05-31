@@ -1,6 +1,6 @@
 .cocktail-card-container {
     padding-top: 5rem;
-    background-color: #282c34;
+    background-color: var(--main-bg-color);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
     gap: 3rem;

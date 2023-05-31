@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './AddIngredient.css'
 
 const AddIngredient = () =>{
     const [ingredientData, setIngredientData] = useState({
@@ -19,22 +20,24 @@ const AddIngredient = () =>{
     };
 
     return(
-        <div className='form-container'>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Field 1:
-                    <input type="text" name="ingredient" value={inputValues.ingredient} onChange={handleChange} />
-                </label>
-                <label>
-                    Field 2:
-                    <input type="text" name="cost" value={inputValues.cost} onChange={handleChange} />
-                </label>
-                <label>
-                    Field 3:
-                    <input type="text" name="ingredientImage" value={inputValues.ingredientImage} onChange={handleChange} />
-                </label>
-                <button type="submit">Submit</button>
-            </form>
+        <div className='centered-div'>
+            <div className='form-container'>
+                <form onSubmit={handleSubmit}>
+                    <label>
+                        Field 1:
+                        <input type="text" name="ingredient" value={ingredientData.ingredient} onChange={handleChange} />
+                    </label>
+                    <label>
+                        Field 2:
+                        <input type="text" name="cost" value={ingredientData.cost} onChange={handleChange} />
+                    </label>
+                    <label>
+                        Field 3:
+                        <input type="text" name="ingredientImage" value={ingredientData.ingredientImage} onChange={handleChange} />
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
 
     );

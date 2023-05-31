@@ -5,6 +5,7 @@ import Navbar from './components/Nav/Nav';
 import "./components/Nav/Nav.css";
 import { Route, Routes } from 'react-router-dom';
 import Featured from './components/Featured/Featured';
+import AddIngredient from './components/AddIngredient/AddIngredient';
 
 function App() {
   const [currentTime, setCurrentTime] = useState(0);
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Featured />} />
+        <Route path='/addingredient' element={<AddIngredient />} />
       </Routes>
       <Navbar />
       <header className="App-header">
