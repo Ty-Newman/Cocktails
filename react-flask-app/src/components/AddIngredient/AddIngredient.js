@@ -24,16 +24,16 @@ const AddIngredient = () =>{
             <div className='form-container'>
                 <form onSubmit={handleSubmit}>
                     <label>
-                        Field 1:
-                        <input type="text" name="ingredient" value={ingredientData.ingredient} onChange={handleChange} />
+                        Ingredient Name:
+                        <input type="text" name="ingredientName" value={ingredientData.ingredientName} onChange={handleChange} />
                     </label>
                     <label>
-                        Field 2:
-                        <input type="text" name="cost" value={ingredientData.cost} onChange={handleChange} />
+                        Ingredient cost:
+                        <input type="text" name="ingredientCost" value={ingredientData.ingredientCost} onChange={handleChange} />
                     </label>
                     <label>
-                        Field 3:
-                        <input type="text" name="ingredientImage" value={ingredientData.ingredientImage} onChange={handleChange} />
+                        Ingredient img URL:
+                        <input type="text" name="ingredientImageURL" value={ingredientData.ingredientImageURL} onChange={handleChange} />
                     </label>
                     <button type="submit">Submit</button>
                 </form>

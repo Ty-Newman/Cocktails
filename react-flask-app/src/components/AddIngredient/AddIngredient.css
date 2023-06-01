@@ -4,6 +4,7 @@
     justify-content: center;
     height: 100vh;
     width: 50%;
+    max-width: 600px;
     margin: 0 auto;
   }
 
@@ -21,24 +22,27 @@
     display: block;
     padding-bottom: 10%;
     color: whitesmoke;
+    text-align: left;
+}
+.form-container form{
+    width: 70%;
+    max-width: 400px;
+    margin: auto auto;
 }
 
 .form-container label input{
-    margin-left: 1em;
+    float: right;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .form-row {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-}
-
-input[type=text] {
-    margin-bottom: 5px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
 }
 
 .form-container button{
@@ -51,4 +55,11 @@ input[type=text] {
     font-size: 1em;
     color: whitesmoke;
     background-color: var(--main-bg-color);
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 930px) {
+    .form-container label input{
+        margin-top: 5px;
+    }
 }
